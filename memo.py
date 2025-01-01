@@ -5,6 +5,7 @@ import json
 
 # 메모 데이터를 저장할 파일 경로
 MEMO_FILE = "memos.json"
+KST = datetime.timezone(datetime.timedelta(hours=9))
 now = datetime.datetime.now()
 
 def load_memos():
