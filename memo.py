@@ -139,5 +139,9 @@ def main():
                 st.session_state.selected_memo = memo_title  # Select the memo directly when clicked
                 st.rerun()  # Trigger a rerun to refresh the app
 
+    # 화면 하단에 크레딧 추가
+    st.markdown("<hr>", unsafe_allow_html=True)  # 구분선
+    st.markdown("<p style='text-align: center;'>Created by Jisong Bang 2025</p>", unsafe_allow_html=True)
+
 if __name__ == "__main__":
     main()
